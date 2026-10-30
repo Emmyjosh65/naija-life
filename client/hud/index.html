@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naija Life - HUD</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f0f0f;
+            font-family: 'Courier New', monospace;
+            color: #ffd700;
+        }
+        .hud-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border: 2px solid #ffd700;
+            background: rgba(20, 0, 0, 0.85);
+            padding: 15px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+            border-radius: 6px;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #ff3333;
+            text-shadow: 1px 1px 2px #ffd700;
+            letter-spacing: 2px;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .label {
+            color: #ffd700;
+        }
+        .value {
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="hud-container">
+        <h1>NAIJA LIFE 🇳🇬</h1>
+        <div class="stat-row"><span class="label">LOCATION:</span> <span class="value">Lagos Mainland</span></div>
+        <div class="stat-row"><span class="label">CASH:</span> <span class="value">₦ 2,500,000</span></div>
+        <div class="stat-row"><span class="label">HEALTH:</span> <span class="value">100%</span></div>
+    </div>
+</body>
+</html>
